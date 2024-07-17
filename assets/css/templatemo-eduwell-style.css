@@ -206,6 +206,10 @@ body {
   color: #fff;
 }
 
+a {
+  font-weight: 600;
+}
+
 @media (max-width: 991px) {
 
   html,
