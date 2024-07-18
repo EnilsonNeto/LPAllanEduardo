@@ -20,6 +20,16 @@
   <link rel="icon" type="image/svg" sizes="32x32" href="./assets/images/logo.png">
   <link rel="icon" type="image/svg" sizes="16x16" href="./assets/images/logo.png">
 
+  <script src="/assets/js/sendmail.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "ilik8t_o7hFtZbVBH",
+      });
+    })();
+  </script>
 </head>
 
 <body>
@@ -33,10 +43,11 @@
               <img style="width: 148px;" src="assets/images/logo.png" alt="EduWell Template">
             </a>
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" style="font-weight: 800;">Inicio</a></li>
+              <li class="scroll-to-section"><a href="#top" style="font-weight: 800; text-align: center;
+    display: flex">Inicio</a></li>
               <li class="scroll-to-section"><a href="#services" style="font-weight: 800;">Serviços</a></li>
               <li class="scroll-to-section"><a href="#courses" style="font-weight: 800;">Sobre mim</a></li>
-              <li class="scroll-to-section"><a href="#testimonials" style="font-weight: 800;">Testemunhas</a></li>
+              <li class="scroll-to-section"><a href="#testimonials" style="font-weight: 800;">Resultados</a></li>
               <li class="scroll-to-section"><a href="#contact-section" style="font-weight: 800;">Contato</a></li>
             </ul>
             <a class='menu-trigger'>
@@ -55,29 +66,31 @@
             <h6>Olá, Seja Bem-Vindo!</h6>
             <h2>Está na hora de alavancar seus <em>Resultados!</em></h2>
             <div class="main-button-gradient">
-              <div class="scroll-to-section"><a href="#contact-section" style="font-weight: 900;">QUERO TER MAIS RESULTADOS</a></div>
+              <div class="scroll-to-section"><a
+                  href="https://wa.me/5581996600779?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20alavancar%20meus%20resultados."
+                  style="font-weight: 900;" target="_blank">QUERO TER MAIS
+                  RESULTADOS</a></div>
             </div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="intro-grid"></div>
           <div class="right-image">
-            <img style="border-radius: 50px; margin-top: 15%; opacity: 98%; width: 400px;" src="assets/images/logo.png"
-              alt="">
+            <img style="border-radius: 50px; margin-top: 15%; opacity: 98%; width: 400px; border: 4px solid #0B106e;"
+              src="assets/images/logo.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ***** Main Banner Area End ***** -->
 
   <section class="services" id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="section-heading">
-            <h6>Our Services</h6>
-            <h4 style="color: #fff;">Provided <em>Services</em></h4>
+            <h6 style="color: #fff;">SKILLS</h6>
+            <h4 style="color: #fff;">Minhas <em>Especialidades</em></h4>
           </div>
         </div>
         <div class="col-lg-12">
@@ -87,109 +100,56 @@
                 <div class="icon">
                   <img src="assets/images/icons/money-management.png" alt="">
                 </div>
-                <h4>Total Faturado</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem architecto maxime, quia
-                  nostrum quo magnam sequi adipisci, sint ducimus totam hic vero laborum itaque numquam pariatur ut
-                  praesentium, officia voluptates!</p>
+                <h4>Planejamento Estratégico</h4>
+                <p>Desenvolver estratégias de campanha alinhadas aos objetivos de marketing e negócios da empresa. Isso
+                  inclui definir orçamentos, segmentação de público-alvo, escolha de canais e definição de
+                  indicadores-chave de desempenho (KPIs).
+                </p>
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
+                  <img src="assets/images/icons/campanha-digital.png" alt="">
                 </div>
-                <h4>Creative Ideas</h4>
-                <p>You can download and use this EduWell Template for your teaching and learning stuffs.</p>
+                <h4>Criação e Configuração de Campanhas</h4>
+                <p>Criar anúncios eficazes, selecionar formatos adequados (como texto, imagem, vídeo), configurar
+                  segmentações avançadas (como por localização, demografia, interesses) e estabelecer lances (bids) para
+                  alcançar os melhores resultados com o orçamento disponível.
+                </p>
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
+                  <img src="assets/images/icons/investimento.png" alt="">
                 </div>
-                <h4>Ready Target</h4>
-                <p>Please tell your friends about the best CSS template website that is TemplateMo.</p>
+                <h4>Gestão e Monitoramento Contínuo</h4>
+                <p>Monitoramento constante de desempenho. Isso envolve acompanhar métricas como taxa de cliques (CTR),
+                  custo por clique (CPC), taxa de conversão, retorno sobre investimento (ROI), entre outras, para
+                  identificar oportunidades de melhoria e ajustar estratégias conforme necessário.
+                </p>
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-04.png" alt="">
+                  <img src="assets/images/icons/otimizacao-da-web.png" alt="">
                 </div>
-                <h4>Technology</h4>
-                <p>Aenean bibendum consectetur ex eu porttitor. Pellentesque id ultrices metus.</p>
+                <h4>Otimização de Campanhas</h4>
+                <p> Implementar ajustes para melhorar o desempenho das campanhas.
+                </p>
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
+                  <img src="assets/images/icons/analise-de-mercado.png" alt="">
                 </div>
-                <h4>Useful Tricks</h4>
-                <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
-                </div>
-                <h4>Creative Ideas</h4>
-                <p>Aenean bibendum consectetur ex eu porttitor. Pellentesque id ultrices metus.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
-                </div>
-                <h4>Ready Target</h4>
-                <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-04.png" alt="">
-                </div>
-                <h4>Technology</h4>
-                <p>Aenean bibendum consectetur ex eu porttitor. Pellentesque id ultrices metus.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
-                </div>
-                <h4>Useful Tricks</h4>
-                <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
-                </div>
-                <h4>Creative Ideas</h4>
-                <p>Aenean bibendum consectetur ex eu porttitor. Pellentesque id ultrices metus.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
-                </div>
-                <h4>Ready Target</h4>
-                <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-04.png" alt="">
-                </div>
-                <h4>Technology</h4>
-                <p>Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.</p>
+                <h4>Análise de Resultados e Relatórios</h4>
+                <p>Relatórios regulares que detalham o desempenho das campanhas em relação aos KPIs estabelecidos. Essas
+                  análises ajudam a demonstrar o impacto das campanhas no crescimento do negócio e fornecem insights
+                  para futuras estratégias de marketing.</p>
               </div>
             </div>
           </div>
@@ -222,7 +182,8 @@
             satisfação dos clientes.
           </p>
           <div class="white-button">
-            <a href="contact-us.html" style="font-weight: 900;">Vamos Conversar</a>
+            <a href="https://wa.me/5581996600779?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20alavancar%20meus%20resultados."
+              style="font-weight: 900;" target="_blank">Vamos Conversar</a>
           </div>
         </div>
       </div>
@@ -235,7 +196,7 @@
         <div class="col-lg-12">
           <div class="section-heading">
             <h6 style="color: #fff;">Resultados</h6>
-            <h4>Aumente suas <em>Prospeções</em></h4>
+            <h4 style="color: #fff;">Aumente suas <em>Prospeções</em></h4>
           </div>
         </div>
         <div class="col-lg-12">
@@ -263,91 +224,83 @@
       <div class="row">
         <div class="col-lg-8">
           <div id="map">
-
-            <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7151.84524236698!2d-122.19494600413192!3d47.56605883252286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490695e625f8965%3A0xf99b055e76477def!2sNewcastle%20Beach%20Park%20Playground%2C%20Bellevue%2C%20WA%2098006%2C%20USA!5e0!3m2!1sen!2sth!4v1644335269264!5m2!1sen!2sth"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790287.9816649677!2d-36.27216614650171!3d-8.283201279764756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a0428f66db393d%3A0x4a5a6e4d5c2ff98d!2sCaruaru%2C%20PE%2C%2055005-180!5e0!3m2!1spt-BR!2sbr!4v1690984422259!5m2!1spt-BR!2sbr"
               width="100%" height="420px" frameborder="0"
-              style="border:0; border-radius: 15px; position: relative; z-index: 2;" allowfullscreen=""></iframe>
+              style="border:10px solid #0B106e; border-radius: 15px; position: relative; z-index: 2;"
+              allowfullscreen=""></iframe>
             <div class="row">
               <div class="col-lg-4 offset-lg-1">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Phone</h4>
-                  <span>010-020-0340</span>
-                </div>
               </div>
               <div class="col-lg-4">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Mobile</h4>
-                  <span>090-080-0760</span>
-                </div>
+                <a href="tel:+5581996377631" target="_blank">
+                  <div class="contact-info">
+                    <div class="icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <h4 style="color: #000;">Me ligue!</h4>
+                    <span>081 99660‑0779</span>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="section-heading">
-                  <h6>Contact us</h6>
-                  <h4>Say <em>Hello</em></h4>
-                  <p>IF you need a working contact form by PHP script, please visit TemplateMo's contact page for more
-                    info.</p>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
-                    required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
-                </fieldset>
+      </div>
+      <div class="col-lg-4">
+        <form id="contact" action="javascript:void(0);" method="post">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-heading">
+                <h6>Vamos conversar?</h6>
+                <h4>Vamos alavancar seus <em>Resultados!</em></h4>
+                <p><b>Preencha as informações abaixo, e vamos alinhar nossas ideis e te trazer uma maior
+                    prospecção!</b></p>
               </div>
             </div>
-          </form>
-        </div>
-        <div class="col-lg-12">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-12">
-          <p class="copyright">Copyright © 2022 EduWell Co., Ltd. All Rights Reserved.
+            <div class="col-lg-12">
+              <fieldset>
+                <input type="text" name="name" id="name" placeholder="Nome completo" autocomplete="on" required>
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Seu email" required>
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <textarea name="message" id="message" placeholder="Me envie uma mensagem!" required></textarea>
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <button type="submit" id="emailButton" class="main-gradient-button" onclick="sendMail()">Enviar
+                  mensagem</button>
+              </fieldset>
+            </div>
+          </div>
+        </form>
 
-            <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
-            <br>Distribution: <a rel="sponsored" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-          </p>
-        </div>
       </div>
+      <div class="col-lg-12">
+        <ul class="social-icons">
+          <li><a href="https://www.instagram.com/allaneduardo_/?theme=dark" target="_blank"><i
+                class="fa fa-instagram"></i></a></li>
+          <li><a
+              href="https://wa.me/5581996600779?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20alavancar%20meus%20resultados."><i
+                class="fa fa-whatsapp" target="_blank"></i></a></li>
+          <li><a href="mailto:allaneduardogestor@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-12">
+        <p class="copyright">Copyright © 2024 <a href="https://www.instagram.com/enilson.dev" target="_blank">Enilson
+            Neto</a> Co., Ltd. All Rights Reserved.
+        </p>
+      </div>
+    </div>
     </div>
   </section>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -359,7 +312,6 @@
   <script src="assets/js/slick-slider.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
-    //according to loftblog tut
     $('.nav li:first').addClass('active');
 
     var showSection = function showSection(section, isAnimate) {
@@ -405,6 +357,9 @@
       checkSection();
     });
   </script>
+
+  <script src="assets/js/sendmail.js"></script>
+
 </body>
 
 </html>
